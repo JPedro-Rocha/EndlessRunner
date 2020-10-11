@@ -497,11 +497,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ab0930257089b64f9acd993fe7f0cea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidade: 10
-  alturaPulo: 6
+  velocidade: 1
+  alturaPulo: 4
   gravidade: 1
   velocidadeHorizontal: 4
   velocidadePista: 1
+  animator: {fileID: 1747303917}
 --- !u!143 &1701071850
 CharacterController:
   m_ObjectHideFlags: 0
@@ -536,6 +537,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1747303917 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9500000, guid: 398da42bc4f6f6e44852a9f96c6c4e41,
+    type: 3}
+  m_PrefabInstance: {fileID: 496546042}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1840059506
 GameObject:
   m_ObjectHideFlags: 0

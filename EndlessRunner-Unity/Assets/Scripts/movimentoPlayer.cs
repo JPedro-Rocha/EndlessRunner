@@ -13,6 +13,8 @@ public class movimentoPlayer : MonoBehaviour
     private float pistaAtual = 3.0f;
     private Vector3 posicaoAlvoVertical;
     public float velocidadePista;
+    public Animator animator;
+    private bool jump = false;
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +30,14 @@ public class movimentoPlayer : MonoBehaviour
 
             if(Input.GetKeyDown(KeyCode.Space)){
                 velocidadePulo = alturaPulo;
+                animator.SetBool("JumpControl", true);
+                jump = true;
             } 
+
+            if(jump){
+                //animator.SetBool("JumpControl", false);
+                //jump = false;
+            }
 
             if(Input.GetKeyDown(KeyCode.RightArrow)){
                 mudarPista(2); 
@@ -48,7 +57,9 @@ public class movimentoPlayer : MonoBehaviour
 
         else{
             velocidadePulo -= gravidade;
-        }
+            animator.SetBool("JumpControl", false);
+        } 
+
 
         direction.y = velocidadePulo;
         controle.Move(direction * Time.deltaTime);
@@ -93,12 +104,15 @@ public class movimentoPlayer : MonoBehaviour
        } 
        }
        else if(sentido < 0) {
-          while(transform.position.x > pistaAlvo){ 
-           controle.Move(esquerdo * Time.deltaTime * velocidadeHorizontal);
-       } 
+            while(transform.position.x > pistaAlvo){ 
+                controle.Move(esquerdo * Time.deltaTime * velocidadeHorizontal);
+            } 
        }
-      
-
-       
    }
+
+   void OnCollisionEnter2D(Collision2D col)
+    {
+        //animator.SetBool("JumpControl", false);
+        //jump = false; 
+    }
 }

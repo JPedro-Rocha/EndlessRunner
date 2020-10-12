@@ -5,4 +5,6 @@ using UnityEngine;
 public class pontoFinalScript : MonoBehaviour
 {
     public Transform pontoFinal;
+
+    public Transform pontoInicial;
 }

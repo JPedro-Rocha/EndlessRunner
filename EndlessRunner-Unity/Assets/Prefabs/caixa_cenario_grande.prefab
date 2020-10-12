@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8626840810551614807}
   - component: {fileID: 3848265726384448294}
+  - component: {fileID: -1874549529123260590}
   m_Layer: 0
   m_Name: caixa_cenario_grande
   m_TagString: Untagged
@@ -32,6 +33,7 @@ Transform:
   - {fileID: 6023557675924549831}
   - {fileID: 7190416238235373187}
   - {fileID: 6067047897694598721}
+  - {fileID: 8239932771411640815}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -48,6 +50,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pontoFinal: {fileID: 6067047897694598721}
+--- !u!114 &-1874549529123260590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 179996019527117986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e04c53cbc1bd4074a9b94d258c67ceb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstaculos:
+  - {fileID: 2113750513540016905, guid: 35d00788c81f66646bc958cd982d62cc, type: 3}
+  numeroDeObstaculos: {x: 5, y: 10}
+  novoObstaculo: []
 --- !u!1 &3216224418653128744
 GameObject:
   m_ObjectHideFlags: 0
@@ -86,6 +104,50 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3216224418653128744}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.28886604}
+  m_Center: {x: 0, y: 0, z: -0.35556698}
+--- !u!1 &3492018348921638423
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8239932771411640815}
+  - component: {fileID: 6071222004026823383}
+  m_Layer: 0
+  m_Name: checkComecoCorredor 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8239932771411640815
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3492018348921638423}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.83, y: 0.305, z: -41.35}
+  m_LocalScale: {x: 6.0381, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8626840810551614807}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &6071222004026823383
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3492018348921638423}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 0

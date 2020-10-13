@@ -44,7 +44,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 0.28886604}
   m_Center: {x: 0, y: 0, z: -0.35556698}
---- !u!1 &6070448351440515883
+--- !u!1 &4029532086843428430
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -52,8 +52,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1941659610623420495}
-  - component: {fileID: 5004763755751007088}
+  - component: {fileID: 7195301273965048870}
+  - component: {fileID: 2716368140369391798}
   m_Layer: 0
   m_Name: checkComecoCorredor 2
   m_TagString: Untagged
@@ -61,33 +61,33 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1941659610623420495
+--- !u!4 &7195301273965048870
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6070448351440515883}
+  m_GameObject: {fileID: 4029532086843428430}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.83, y: 0.305, z: -43.22}
-  m_LocalScale: {x: 6.0381, y: 1, z: 1}
+  m_LocalPosition: {x: 2.768, y: 0.38, z: -43.36}
+  m_LocalScale: {x: 5.8708, y: 1, z: 0.47264}
   m_Children: []
   m_Father: {fileID: 7768412083241711551}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &5004763755751007088
+--- !u!65 &2716368140369391798
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6070448351440515883}
+  m_GameObject: {fileID: 4029532086843428430}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 0.28886604}
-  m_Center: {x: 0, y: 0, z: -0.35556698}
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7768412083234500098
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,7 +191,7 @@ Transform:
   - {fileID: 7768412084962310549}
   - {fileID: 6597902182047057873}
   - {fileID: 5210935398709083427}
-  - {fileID: 1941659610623420495}
+  - {fileID: 7195301273965048870}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -208,6 +208,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pontoFinal: {fileID: 5210935398709083427}
+  pontoInicial: {fileID: 7195301273965048870}
 --- !u!114 &4283698352112729390
 MonoBehaviour:
   m_ObjectHideFlags: 0

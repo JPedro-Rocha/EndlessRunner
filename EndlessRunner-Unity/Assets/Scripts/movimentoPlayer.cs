@@ -26,91 +26,103 @@ public class movimentoPlayer : MonoBehaviour
     void Update()
     {
         Vector3 direction = Vector3.forward * velocidade;
-        if(controle.isGrounded){
+        if (controle.isGrounded)
+        {
 
-            if(Input.GetKeyDown(KeyCode.Space)){
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
                 velocidadePulo = alturaPulo;
                 animator.SetBool("JumpControl", true);
                 jump = true;
-            } 
+            }
 
-            if(jump){
+            if (jump)
+            {
                 //animator.SetBool("JumpControl", false);
                 //jump = false;
             }
 
-            if(Input.GetKeyDown(KeyCode.RightArrow)){
-                mudarPista(2); 
+            if (Input.GetKeyDown(KeyCode.RightArrow))
+            {
+                mudarPista(2);
                 //StartCoroutine(movementoDireto());
-               
+
             }
 
-            if(Input.GetKeyDown(KeyCode.LeftArrow)){
+            if (Input.GetKeyDown(KeyCode.LeftArrow))
+            {
                 mudarPista(-2);
                 //StartCoroutine(movimentoEsquerdo());
-                
-                
-            } 
-                //Vector3 posicaoAlvo = new Vector3(posicaoAlvoVertical.x,posicaoAlvoVertical.y, transform.position.z);
-                //transform.position = Vector3.MoveTowards(transform.position,posicaoAlvo, velocidadePista * Time.deltaTime);
+
+
+            }
+            //Vector3 posicaoAlvo = new Vector3(posicaoAlvoVertical.x,posicaoAlvoVertical.y, transform.position.z);
+            //transform.position = Vector3.MoveTowards(transform.position,posicaoAlvo, velocidadePista * Time.deltaTime);
         }
 
-        else{
+        else
+        {
             velocidadePulo -= gravidade;
             animator.SetBool("JumpControl", false);
-        } 
+        }
 
 
         direction.y = velocidadePulo;
         controle.Move(direction * Time.deltaTime);
-    } 
+    }
 
     IEnumerator movimentoEsquerdo()
     {
-        Vector3 esquerdo = new Vector3(-0.5f,0,0);
-        for(float i = 0; i < 2; i += 0.2f)
+        Vector3 esquerdo = new Vector3(-0.5f, 0, 0);
+        for (float i = 0; i < 2; i += 0.2f)
         {
             controle.Move(esquerdo * Time.deltaTime * velocidadeHorizontal);
             yield return null;
-        } 
+        }
 
     }
 
     IEnumerator movementoDireto()
     {
-        Vector3 direito = new Vector3(0.5f,0,0);
-        for(float i = 0; i < 2; i += 0.2f)
+        Vector3 direito = new Vector3(0.5f, 0, 0);
+        for (float i = 0; i < 2; i += 0.2f)
         {
             controle.Move(direito * Time.deltaTime * velocidadeHorizontal);
             yield return null;
         }
-    } 
+    }
 
-   void mudarPista(int sentido){
-       float pistaAlvo = pistaAtual + sentido;
-       if(pistaAlvo < 0.5f || pistaAlvo > 5.0f){
-           return;
-       }
-       
-       pistaAtual = pistaAlvo;
-       //posicaoAlvoVertical = new Vector3(pistaAtual, 0.25209140f, 0);
-       //controle.Move(posicaoAlvoVertical);*/
-       float alvo;
-       Vector3 esquerdo = new Vector3(-1,0,0);
-       Vector3 direito = new Vector3(1,0,0);
-       if(sentido > 0){
-            while(transform.position.x < pistaAlvo){ 
-           controle.Move(direito * Time.deltaTime * velocidadeHorizontal);
-       } 
-       }
-       else if(sentido < 0) {
-            while(transform.position.x > pistaAlvo){ 
+    void mudarPista(int sentido)
+    {
+        float pistaAlvo = pistaAtual + sentido;
+        if (pistaAlvo < 0.5f || pistaAlvo > 5.0f)
+        {
+            return;
+        }
+
+        pistaAtual = pistaAlvo;
+        //posicaoAlvoVertical = new Vector3(pistaAtual, 0.25209140f, 0);
+        //controle.Move(posicaoAlvoVertical);*/
+        float alvo;
+        Vector3 esquerdo = new Vector3(-1, 0, 0);
+        Vector3 direito = new Vector3(1, 0, 0);
+        if (sentido > 0)
+        {
+            while (transform.position.x < pistaAlvo)
+            {
+                controle.Move(direito * Time.deltaTime * velocidadeHorizontal);
+            }
+        }
+        else if (sentido < 0)
+        {
+            while (transform.position.x > pistaAlvo)
+            {
                 controle.Move(esquerdo * Time.deltaTime * velocidadeHorizontal);
-            } 
-       }
-   }
+            }
+        }
+    }
 
-   void OnCollisionEnter2D(Collision2D col)
+    void OnCollisionEnter2D(Collision2D col)
     {
         //animator.SetBool("JumpControl", false);
         //jump = false; 

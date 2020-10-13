@@ -23,12 +23,12 @@ public class SpawnCorredor : MonoBehaviour
 
         for (int i = 0; i < corredores.Count; i++)
         {
-            Transform corr = Instantiate(corredores[i], new Vector3(0, 0, tamanho += 66.8f), transform.rotation).transform;
+            Transform corr = Instantiate(corredores[i], new Vector3(2.82f, -0.08f, tamanho += 66.8f), transform.rotation).transform;
             corredoresInst.Add(corr);
             offset += 66.8f;
         }
 
-        posicaoCorredorAtual = corredoresInst[corredorIndex].GetComponent<pontoFinalScript>().pontoFinal;//pega a posição através do componente pontoFinal do script de ponto final da instância de um corredor
+        posicaoCorredorAtual = corredoresInst[corredorIndex].GetComponentInChildren<pontoFinalScript>().pontoFinal;//pega a posição através do componente pontoFinal do script de ponto final da instância de um corredor
 
     }
 
@@ -47,14 +47,16 @@ public class SpawnCorredor : MonoBehaviour
                 corredorIndex = 0;
             }
 
-            posicaoCorredorAtual = corredoresInst[corredorIndex].GetComponent<pontoFinalScript>().pontoFinal;
+            posicaoCorredorAtual = corredoresInst[corredorIndex].GetComponentInChildren<pontoFinalScript>().pontoFinal;
 
         }
     }
 
     public void respawnCorredor(GameObject corredor)
     {
-        corredor.transform.position = new Vector3(0, 0, offset);
-        offset += 66.8f;
-    }
+        corredor.transform.position = new Vector3(2.82f, -0.08f, offset);
+        offset += 66.84f;
+    }//2.82 -0.081 23.96 container 1 <-| container 2 -> 3.05 0.177 -43.351 container 3 -> 2.83 -.0.06 90.53
+    //position the first container should be 2.82 -0.06 -42.87
+    //position of the pivot 2.79 -0.006 -42.828
 }

@@ -33,7 +33,7 @@ public class spawnObstacles : MonoBehaviour
         {
             float posZMin = -40.42f;//(66.84f / novoObstaculo.Count) + (66.84f / novoObstaculo.Count) * i;
             float posZMax = 20.42f;//(66.84f / novoObstaculo.Count) + (66.84f / novoObstaculo.Count) * i + 1;
-            novoObstaculo[i].transform.localPosition = new Vector3(0, 0.45f, Random.Range(posZMin, posZMax));
+            novoObstaculo[i].transform.localPosition = new Vector3(0, 0.35f, Random.Range(posZMin, posZMax));
             novoObstaculo[i].SetActive(true);
         }
     }

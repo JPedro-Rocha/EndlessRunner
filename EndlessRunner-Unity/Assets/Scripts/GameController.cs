@@ -19,6 +19,6 @@ public class GameController : MonoBehaviour
     {
         recorde += Time.deltaTime * 5f;
         recordeTela.text = Mathf.Round(recorde).ToString();
-        jogador.velocidade = recorde/10;
+        jogador.velocidade = /*recorde / 100;*/100f;
     }
 }

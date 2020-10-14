@@ -5240,7 +5240,7 @@ GameObject:
   - component: {fileID: 5337096580515679691}
   m_Layer: 0
   m_Name: projector
-  m_TagString: Untagged
+  m_TagString: Projetor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

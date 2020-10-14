@@ -41,9 +41,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5439960750488993542}
     m_Modifications:
+    - target: {fileID: 109954, guid: 6b957ce4847a3294e86146e28f50e806, type: 3}
+      propertyPath: m_TagString
+      value: Barras
+      objectReference: {fileID: 0}
     - target: {fileID: 134520, guid: 6b957ce4847a3294e86146e28f50e806, type: 3}
       propertyPath: m_Name
       value: tube-detail4 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 134520, guid: 6b957ce4847a3294e86146e28f50e806, type: 3}
+      propertyPath: m_TagString
+      value: Barras
+      objectReference: {fileID: 0}
+    - target: {fileID: 163910, guid: 6b957ce4847a3294e86146e28f50e806, type: 3}
+      propertyPath: m_TagString
+      value: Barras
+      objectReference: {fileID: 0}
+    - target: {fileID: 184162, guid: 6b957ce4847a3294e86146e28f50e806, type: 3}
+      propertyPath: m_TagString
+      value: Barras
       objectReference: {fileID: 0}
     - target: {fileID: 437508, guid: 6b957ce4847a3294e86146e28f50e806, type: 3}
       propertyPath: m_LocalPosition.x
@@ -108,9 +124,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5439960750488993542}
     m_Modifications:
+    - target: {fileID: 109954, guid: 6b957ce4847a3294e86146e28f50e806, type: 3}
+      propertyPath: m_TagString
+      value: Barras
+      objectReference: {fileID: 0}
     - target: {fileID: 134520, guid: 6b957ce4847a3294e86146e28f50e806, type: 3}
       propertyPath: m_Name
       value: tube-detail4 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 134520, guid: 6b957ce4847a3294e86146e28f50e806, type: 3}
+      propertyPath: m_TagString
+      value: Barras
+      objectReference: {fileID: 0}
+    - target: {fileID: 163910, guid: 6b957ce4847a3294e86146e28f50e806, type: 3}
+      propertyPath: m_TagString
+      value: Barras
+      objectReference: {fileID: 0}
+    - target: {fileID: 184162, guid: 6b957ce4847a3294e86146e28f50e806, type: 3}
+      propertyPath: m_TagString
+      value: Barras
       objectReference: {fileID: 0}
     - target: {fileID: 437508, guid: 6b957ce4847a3294e86146e28f50e806, type: 3}
       propertyPath: m_LocalPosition.x
@@ -175,9 +207,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5439960750488993542}
     m_Modifications:
+    - target: {fileID: 109954, guid: 6b957ce4847a3294e86146e28f50e806, type: 3}
+      propertyPath: m_TagString
+      value: Barras
+      objectReference: {fileID: 0}
     - target: {fileID: 134520, guid: 6b957ce4847a3294e86146e28f50e806, type: 3}
       propertyPath: m_Name
       value: tube-detail4 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 134520, guid: 6b957ce4847a3294e86146e28f50e806, type: 3}
+      propertyPath: m_TagString
+      value: Barras
+      objectReference: {fileID: 0}
+    - target: {fileID: 163910, guid: 6b957ce4847a3294e86146e28f50e806, type: 3}
+      propertyPath: m_TagString
+      value: Barras
+      objectReference: {fileID: 0}
+    - target: {fileID: 184162, guid: 6b957ce4847a3294e86146e28f50e806, type: 3}
+      propertyPath: m_TagString
+      value: Barras
       objectReference: {fileID: 0}
     - target: {fileID: 437508, guid: 6b957ce4847a3294e86146e28f50e806, type: 3}
       propertyPath: m_LocalPosition.x
@@ -242,9 +290,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5439960750488993542}
     m_Modifications:
+    - target: {fileID: 109954, guid: 6b957ce4847a3294e86146e28f50e806, type: 3}
+      propertyPath: m_TagString
+      value: Barras
+      objectReference: {fileID: 0}
     - target: {fileID: 134520, guid: 6b957ce4847a3294e86146e28f50e806, type: 3}
       propertyPath: m_Name
       value: tube-detail4
+      objectReference: {fileID: 0}
+    - target: {fileID: 134520, guid: 6b957ce4847a3294e86146e28f50e806, type: 3}
+      propertyPath: m_TagString
+      value: Barras
+      objectReference: {fileID: 0}
+    - target: {fileID: 163910, guid: 6b957ce4847a3294e86146e28f50e806, type: 3}
+      propertyPath: m_TagString
+      value: Barras
+      objectReference: {fileID: 0}
+    - target: {fileID: 184162, guid: 6b957ce4847a3294e86146e28f50e806, type: 3}
+      propertyPath: m_TagString
+      value: Barras
       objectReference: {fileID: 0}
     - target: {fileID: 437508, guid: 6b957ce4847a3294e86146e28f50e806, type: 3}
       propertyPath: m_LocalPosition.x

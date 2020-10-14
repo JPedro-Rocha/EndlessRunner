@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5337096580498231835}
   m_Layer: 0
   m_Name: hologram_LOD1
-  m_TagString: Untagged
+  m_TagString: Projetor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -91,7 +91,7 @@ GameObject:
   - component: {fileID: 5337096580489668601}
   m_Layer: 0
   m_Name: Point light
-  m_TagString: Untagged
+  m_TagString: Projetor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -184,7 +184,7 @@ GameObject:
   - component: {fileID: 5337096580514204587}
   m_Layer: 0
   m_Name: Particle System
-  m_TagString: Untagged
+  m_TagString: Projetor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4996,7 +4996,7 @@ GameObject:
   - component: {fileID: 5337096580498231597}
   m_Layer: 0
   m_Name: projector_LOD0
-  m_TagString: Untagged
+  m_TagString: Projetor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5079,7 +5079,7 @@ GameObject:
   - component: {fileID: 5337096580498238157}
   m_Layer: 0
   m_Name: hologram_LOD0
-  m_TagString: Untagged
+  m_TagString: Projetor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5158,7 +5158,7 @@ GameObject:
   - component: {fileID: 5337096580498200981}
   m_Layer: 0
   m_Name: projector_LOD1
-  m_TagString: Untagged
+  m_TagString: Projetor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -15,6 +15,7 @@ public class movimentoPlayer : MonoBehaviour
     public float velocidadePista;
     public Animator animator;
     private bool jump = false;
+    public bool agachado = false;
 
     // Start is called before the first frame update
     void Start()
@@ -36,10 +37,18 @@ public class movimentoPlayer : MonoBehaviour
                 jump = true;
             }
 
-            if (jump)
+            if (Input.GetKey(KeyCode.DownArrow))
             {
-                //animator.SetBool("JumpControl", false);
-                //jump = false;
+                animator.SetBool("agachado", true);
+                agachado = true;
+                controle.height = 1.04f;
+                controle.center = new Vector3(0,0.21f,0.48f);
+            }else{
+                animator.SetBool("agachado", false);
+                controle.height = 1.48f;
+                controle.center = new Vector3(0,0.34f,0.48f);
+                agachado = false;
+                
             }
 
             if (Input.GetKeyDown(KeyCode.RightArrow))

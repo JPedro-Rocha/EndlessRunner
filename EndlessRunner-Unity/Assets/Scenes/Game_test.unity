@@ -702,6 +702,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jogador: {fileID: 1701071849}
   recordeTela: {fileID: 1614573003}
+  ambiente: {fileID: 8300000, guid: ba045ac1d76f81348a6ef09510ae8a8c, type: 3}
+  morte: {fileID: 8300000, guid: e539eae85f633a944b06105c1e4d0d74, type: 3}
+  controle: 0
 --- !u!1 &1325420273
 GameObject:
   m_ObjectHideFlags: 0

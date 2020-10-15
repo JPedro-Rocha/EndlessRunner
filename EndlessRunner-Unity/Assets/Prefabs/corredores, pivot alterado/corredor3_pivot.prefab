@@ -64,7 +64,7 @@ PrefabInstance:
         type: 3}
       propertyPath: obstaculos.Array.data[3]
       value: 
-      objectReference: {fileID: 5337096580500431311, guid: 123215bd6ae890649bf4cf2764ee43af,
+      objectReference: {fileID: 6615350143131882949, guid: 6e7340705c2f052488065f185bda866f,
         type: 3}
     - target: {fileID: 2775244374862282834, guid: 7a7a11ef3346d944486cb9da7a72408a,
         type: 3}

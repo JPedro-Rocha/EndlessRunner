@@ -7,10 +7,10 @@ public class movimentoPlayer : MonoBehaviour
 {
     //private CharacterController controle;
     private BoxCollider collider;
-    public float velocidade;
+    //public float velocidade;
     public float alturaPulo;
-    private float velocidadePulo;
-    public float gravidade;
+    //private float velocidadePulo;
+    //public float gravidade;
     public float velocidadeHorizontal;
     private float pistaAtual = 2.8f;
     private Vector3 posicaoAlvoVertical = new Vector3(2.8f,0.4f, 0);
@@ -20,7 +20,7 @@ public class movimentoPlayer : MonoBehaviour
 
     public float speed;
     public Rigidbody body;
-    public float puloAltura;
+    //public float puloAltura;
     public float puloDistancia;
     private bool jump = false;
     private float comecoPulo;
@@ -98,7 +98,6 @@ public class movimentoPlayer : MonoBehaviour
             //velocidadePulo = alturaPulo;
             //body.velocity = Vector3.up * speed;
             pulo();
-            animator.SetBool("JumpControl", true);
             //jump = true;
         }
 
@@ -162,8 +161,8 @@ public class movimentoPlayer : MonoBehaviour
 
         if(!jump){
             comecoPulo = transform.position.z;
-            //animator pulo
-            //animator spped do pulo
+            animator.SetBool("JumpControl", true);
+            //animator.SetFloat("Speed",speed/alturaPulo);
             jump = true;
         }
     }

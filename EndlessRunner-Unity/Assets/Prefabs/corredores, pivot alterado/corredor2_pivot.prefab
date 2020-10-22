@@ -467,7 +467,7 @@ GameObject:
   - component: {fileID: 4925032927060391571}
   m_Layer: 0
   m_Name: corredor2_pivot
-  m_TagString: Untagged
+  m_TagString: Corredor2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -1744,6 +1744,12 @@ PrefabInstance:
       propertyPath: obstaculos.Array.data[3]
       value: 
       objectReference: {fileID: 6615350143131882949, guid: 6e7340705c2f052488065f185bda866f,
+        type: 3}
+    - target: {fileID: 4283698352112729390, guid: cd868b5177ad1814eb71059d2bf226e1,
+        type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 5603950900136506649, guid: 81d4a584359c92f4e9f3fb7eeb18cec4,
         type: 3}
     - target: {fileID: 6597902180718849172, guid: cd868b5177ad1814eb71059d2bf226e1,
         type: 3}

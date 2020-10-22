@@ -3647,6 +3647,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6615350143131882949, guid: 6e7340705c2f052488065f185bda866f,
         type: 3}
+    - target: {fileID: 287020379743045937, guid: 7a7a11ef3346d944486cb9da7a72408a,
+        type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 5603950900136506649, guid: 81d4a584359c92f4e9f3fb7eeb18cec4,
+        type: 3}
     - target: {fileID: 603073823712306392, guid: 7a7a11ef3346d944486cb9da7a72408a,
         type: 3}
       propertyPath: m_StaticEditorFlags

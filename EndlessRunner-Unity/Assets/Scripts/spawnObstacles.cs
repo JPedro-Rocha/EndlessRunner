@@ -13,7 +13,6 @@ public class spawnObstacles : MonoBehaviour
 
     void Start()//instanciar os obstaculos primeiro e depois ativar eles na posição certa, e reciclar depois de o jogador passar por ele
     {
-        Debug.Log("Oh Hi Mark!");
         surface.BuildNavMesh();
 
         int novoNumeroDeObstaculos = (int)Random.Range(numeroDeObstaculos.x, numeroDeObstaculos.y);//tirando o número de obsáculos a ser instanciado
@@ -39,7 +38,7 @@ public class spawnObstacles : MonoBehaviour
         float posZMin = -40.42f;//(66.84f / novoObstaculo.Count) + (66.84f / novoObstaculo.Count) * i;
         float posZMax = 20.42f;//(66.84f / novoObstaculo.Count) + (66.84f / novoObstaculo.Count) * i + 1;
 
-        enemy.transform.localPosition = new Vector3(0.67f, -0.237f, Random.Range(posZMin, posZMax));
+        enemy.transform.localPosition = new Vector3(2.79f, 1.17f, Random.Range(posZMin, posZMax)); Debug.Log("HI");
         enemy.SetActive(true);
 
         for (int i = 0; i < novoObstaculo.Count; i++)

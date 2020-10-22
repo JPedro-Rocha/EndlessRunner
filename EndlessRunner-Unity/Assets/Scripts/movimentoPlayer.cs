@@ -147,6 +147,10 @@ public class movimentoPlayer : MonoBehaviour
             }
         }else{
             posicaoAlvoVertical.y = Mathf.MoveTowards( posicaoAlvoVertical.y, 0.4f, 5 * Time.deltaTime);
+        } 
+
+        if(speed > 2){
+           animator.SetBool("Correr", true); 
         }
 
         Vector3 posicaoAlvo = new Vector3(posicaoAlvoVertical.x,posicaoAlvoVertical.y, transform.position.z);

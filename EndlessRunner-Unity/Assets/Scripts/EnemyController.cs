@@ -27,7 +27,6 @@ public class EnemyController : MonoBehaviour
 
     private void Patroling()
     {
-        Debug.Log("Oh hi Mark");
         if (!walkPointSet) { SearchWalkPoint(); }
         if (walkPointSet) { agent.SetDestination(walkPoint); }
 

@@ -13,15 +13,17 @@ public class spawnObstacles : MonoBehaviour
 
     void Start()//instanciar os obstaculos primeiro e depois ativar eles na posição certa, e reciclar depois de o jogador passar por ele
     {
+        Debug.Log("Oh Hi Mark!");
         surface.BuildNavMesh();
 
         int novoNumeroDeObstaculos = (int)Random.Range(numeroDeObstaculos.x, numeroDeObstaculos.y);//tirando o número de obsáculos a ser instanciado
         for (int i = 0; i < novoNumeroDeObstaculos; i++)
         {
-            Debug.Log("Oh Hi Mark!");
             novoObstaculo.Add(Instantiate(obstaculos[Random.Range(0, obstaculos.Length)], transform));//qual obstáculo é selecionado é escolhio randomicamente
             novoObstaculo[i].SetActive(false);
         }
+
+        //instancia o inimigo com a AI
         Instantiate(enemy, transform);
         enemy.SetActive(false);
         posicionarObstaculos();

@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class spawnObstacles : MonoBehaviour
 {
+    public NavMeshSurface surface;
     public GameObject[] obstaculos;//prefabs
     public Vector2 numeroDeObstaculos;//valor mínimo e máximo para sortear o número de obstáculos a serem instanciados
     public List<GameObject> novoObstaculo;//instancia do obstáculo
@@ -11,6 +13,8 @@ public class spawnObstacles : MonoBehaviour
 
     void Start()//instanciar os obstaculos primeiro e depois ativar eles na posição certa, e reciclar depois de o jogador passar por ele
     {
+        surface.BuildNavMesh();
+
         int novoNumeroDeObstaculos = (int)Random.Range(numeroDeObstaculos.x, numeroDeObstaculos.y);//tirando o número de obsáculos a ser instanciado
         for (int i = 0; i < novoNumeroDeObstaculos; i++)
         {

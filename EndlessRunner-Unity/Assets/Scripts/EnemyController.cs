@@ -14,6 +14,7 @@ public class EnemyController : MonoBehaviour
     public Vector3 walkPoint;
     bool walkPointSet;
     public float walkPointRange;
+    public Vector3 target;
 
     //states
     public float sightRange;
@@ -23,6 +24,7 @@ public class EnemyController : MonoBehaviour
     {
         player = GameObject.Find("Player (1)").transform;
         agent = GetComponent<NavMeshAgent>();
+        target = new Vector3(player.position.x, transform.position.y, player.position.z);
     }
 
     private void Patroling()
@@ -38,7 +40,8 @@ public class EnemyController : MonoBehaviour
     private void ChasePlayer()
     {
         agent.SetDestination(player.position);
-        transform.LookAt(player);
+
+        transform.LookAt(target);
     }
 
     private void SearchWalkPoint()

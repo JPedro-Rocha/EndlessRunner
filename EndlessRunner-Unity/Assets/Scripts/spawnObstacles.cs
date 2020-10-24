@@ -5,6 +5,9 @@ using UnityEngine.AI;
 
 public class spawnObstacles : MonoBehaviour
 {
+
+    public NavMeshAgent agent;
+
     public NavMeshSurface surface;
     public GameObject[] obstaculos;//prefabs
     public Vector2 numeroDeObstaculos;//valor mínimo e máximo para sortear o número de obstáculos a serem instanciados
@@ -23,14 +26,23 @@ public class spawnObstacles : MonoBehaviour
         }
 
         //instancia o inimigo com a AI
-        Instantiate(enemy, transform);
+        Instantiate(enemy, transform);//transform experimental
+        agent = enemy.GetComponent<NavMeshAgent>();//experimental
         enemy.SetActive(false);
         posicionarObstaculos();
     }
 
     void Update()
     {
-
+        //if experimental
+        if (!agent.isOnNavMesh)
+        {
+            Debug.Log("not on navmesh");
+            Vector3 warpPosition = new Vector3(2.79f, 1.17f, Random.Range(-40.42f, 20.42f)); //Set to position you want to warp to
+            agent.transform.position = warpPosition;
+            agent.enabled = false;
+            agent.enabled = true;
+        }
     }
 
     void posicionarObstaculos() //current character position 2.8 0.189
@@ -38,7 +50,10 @@ public class spawnObstacles : MonoBehaviour
         float posZMin = -40.42f;//(66.84f / novoObstaculo.Count) + (66.84f / novoObstaculo.Count) * i;
         float posZMax = 20.42f;//(66.84f / novoObstaculo.Count) + (66.84f / novoObstaculo.Count) * i + 1;
 
-        enemy.transform.localPosition = new Vector3(2.79f, 1.17f, Random.Range(posZMin, posZMax)); Debug.Log("HI");
+        //enemy.transform.localPosition = new Vector3(2.79f, 1.17f, Random.Range(posZMin, posZMax)); código antigo para colocar a posição do inimigo
+
+        Vector3 enemyPosition = new Vector3(2.79f, 1.17f, Random.Range(posZMin, posZMax));
+        enemy.GetComponent<UnityEngine.AI.NavMeshAgent>().Warp(enemyPosition);
         enemy.SetActive(true);
 
         for (int i = 0; i < novoObstaculo.Count; i++)

@@ -16,7 +16,7 @@ public class GameController : MonoBehaviour
     void Start()
     {
         jogador = GameObject.FindGameObjectWithTag("Player").GetComponent<movimentoPlayer>();
-        AudioSource.PlayClipAtPoint(ambiente, Camera.main.transform.position);
+        //AudioSource.PlayClipAtPoint(ambiente, Camera.main.transform.position);
     }
 
     // Update is called once per frame

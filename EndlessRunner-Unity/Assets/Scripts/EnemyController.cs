@@ -19,6 +19,7 @@ public class EnemyController : MonoBehaviour
     //states
     public float sightRange;
     public bool playerInSightRange;
+    public Animator animator;
 
     private void Awake()
     {
@@ -35,6 +36,8 @@ public class EnemyController : MonoBehaviour
         Vector3 distanceToWalkPoint = transform.position - walkPoint;
 
         if (distanceToWalkPoint.magnitude < 1f) { walkPointSet = false; }
+
+        animator.SetBool("chasing", false);
     }
 
     private void ChasePlayer()
@@ -42,6 +45,8 @@ public class EnemyController : MonoBehaviour
         agent.SetDestination(player.position);
 
         transform.LookAt(target);
+
+        animator.SetBool("chasing", true);
     }
 
     private void SearchWalkPoint()

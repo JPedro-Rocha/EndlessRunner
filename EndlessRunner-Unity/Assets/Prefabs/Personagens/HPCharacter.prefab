@@ -920,7 +920,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5603950900136506649}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.79, y: 1.17, z: 13.904476}
+  m_LocalPosition: {x: 2.79, y: 1.17, z: 0.23717594}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 88791060656488311}
@@ -1000,6 +1000,7 @@ MonoBehaviour:
   target: {x: 0, y: 0, z: 0}
   sightRange: 7
   playerInSightRange: 0
+  animator: {fileID: 5603950901599606460}
 --- !u!1 &5603950900136506651
 GameObject:
   m_ObjectHideFlags: 0

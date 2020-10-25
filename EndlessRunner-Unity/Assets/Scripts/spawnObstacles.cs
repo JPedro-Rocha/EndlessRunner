@@ -37,7 +37,6 @@ public class spawnObstacles : MonoBehaviour
         //if experimental
         if (!agent.isOnNavMesh)
         {
-            Debug.Log("not on navmesh");
             Vector3 warpPosition = new Vector3(2.79f, 1.17f, Random.Range(-40.42f, 20.42f)); //Set to position you want to warp to
             agent.transform.position = warpPosition;
             agent.enabled = false;
